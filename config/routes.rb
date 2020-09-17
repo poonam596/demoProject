@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :books
   get 'home/index'
   # get 'sessions/new'
   # get 'sessions/create'

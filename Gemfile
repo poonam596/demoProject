@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.7'
  gem 'whenever', require: false
  gem 'redis'
  gem 'redis-rails'
+ gem 'redis-namespace'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

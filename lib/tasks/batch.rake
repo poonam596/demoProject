@@ -81,6 +81,15 @@ namespace :batch do
     rena=redis.hgetall()
     p rena
   end
+  
+   desc "This is Redis Rename Example"
+  task redis_rename: :environment do
+    redis = Redis.new
+    redis.set("helloo","world")
+    rename=redis.rename("helloo","okkay")
+    redis.get(rename)
+    p rename
+  end
 
 end
 
